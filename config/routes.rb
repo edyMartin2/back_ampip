@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       resources :user_informations
       resources :users
       resources :show_motorcycles
+      resources :test
       devise_scope :user do
         post "sign_up", to: "registrations#create"
         post "sign_in", to: "sessions#create"
