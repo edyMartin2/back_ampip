@@ -2,7 +2,7 @@ class Api::V1::UserInformationSerializer < Api::V1::ApplicationSerializer
   attributes  :id,
               :user_id,
               :full_name,
-              :last_name,
+              :last_name, 
               :address
 
   #def photo
@@ -12,4 +12,4 @@ class Api::V1::UserInformationSerializer < Api::V1::ApplicationSerializer
   #   }
   # end
   end
-end
+end 

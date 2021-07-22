@@ -7,7 +7,7 @@ class ApplicationSerializer < ActiveModel::Serializer
     hash
   end
 
-  protected
+  protected 
 
   def default_url_options
     Rails.application.config.action_mailer.default_url_options
