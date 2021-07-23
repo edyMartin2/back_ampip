@@ -19,6 +19,7 @@ gem 'active_model_serializers', '~> 0.10.10'
 gem 'devise'
 gem "pundit"
 gem "simple_token_authentication"
+gem 'pry', '~> 0.14.1'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
