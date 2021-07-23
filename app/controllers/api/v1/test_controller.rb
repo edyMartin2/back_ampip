@@ -2,8 +2,8 @@ class Api::V1::TestController < ApplicationController
 
     def index        
                 
-        info = permissionX
-        render json: info, each_serializer: Api::V1::Permission_Serializer
+        info = userChanges
+        render json: info, each_serializer: Api::V1::TenantUserSerializer
 
     end
 
@@ -33,8 +33,36 @@ class Api::V1::TestController < ApplicationController
         return Permission.all
     end
 
+    #provado y listo
     def property
          return Property.all
     end
 
+    #provado y listo
+    def propertyInfoX
+        return PropertyInformation.all
+    end
+    #probado y listo
+    def propertyUserX
+        return PropertyUser.all
+    end
+    #probado y listo
+    def statusDisponibility
+        return StatusDisponibility.all 
+    end
+
+    #probado y listo
+    def tenantHistory
+        return TenantHistory.all
+    end
+    
+    #probado y listo
+    def tenantUser
+        return TenantUser.all
+    end
+
+    #probado y listo
+    def userChanges
+        rerun UserChange.all
+    end
 end
